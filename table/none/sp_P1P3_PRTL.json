@@ -1,0 +1,44 @@
+{
+  "table": "sp_P1P3_PRTL",
+  "title": "Combined Chart - Aggregate",
+  "transform": {
+    "Function": "trim",
+    "table": "sp_P1P3_PRTL",
+    "dateField": "Cohort Entry Date"
+  },
+  "params": [
+    "quarterEntry",
+    "age",
+    "ethnicityCensus",
+    "gender",
+    "initSetng",
+    "lastSetng",
+    "removalReason",
+    "removalCounty"
+  ],
+  "dateParams": [],
+  "requiredParams": [
+    "quarterEntry"
+  ],
+  "showAllOthers": false,
+  "returnRowHeaders": [
+    0,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    9,
+    11
+  ],
+  "returnRowDateHeaders": [
+    0
+  ],
+  "returnRowStart": 12,
+  "chartType": "line",
+  "labels": {
+    "x": "Months Since Entering",
+    "y": "Percentage Achieving Case Outcome"
+  }
+}

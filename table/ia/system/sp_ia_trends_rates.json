@@ -1,0 +1,81 @@
+{
+	"table": "sp_ia_trends_rates",
+	"title": "Rate of Investigations & Assessments",
+	"subtitle": "Per 1,000 Households",
+	"dropdown": "Rate of Investigations & Assessments",
+	"measurementOrder": 2,
+	"transform": {
+		"Function": "daterow",
+		"dateField": "Date",
+		"valueFields": ["Opened Investigations & Assessments",
+		"Closed Investigations & Assessments"],
+		"removeFields": []
+	},
+	"controls": ["qry_type_poc2",
+	"date_type"],
+	"params": ["dynamicMonthStart",
+	"ageSib",
+	"ethnicityCensus",
+	"Ref_Serv_County",
+	"reporter_type",
+	"access_type",
+	"allegation",
+	"finding"],
+	"requiredParams": ["dynamicMonthStart"],
+	"dateParams": [],
+	"hideRow": "allEmpty",
+	"returnRowHeaders": [1,
+	2,
+	4,
+	6,
+	8,
+	10,
+	12,
+	14,
+	16],
+	"returnRowDateHeaders": [0],
+	"returnRowControlHeaders": [1,
+	2],
+	"headerNames": ["&nbsp;",
+	"*qry_type_poc2",
+	"Age Grouping=ageSib",
+	"Race/Ethnicity",
+	"County=Ref_Serv_County",
+	"Reporter Desc=reporter_type",
+	"Access type desc=access_type",
+	"Allegation=allegation",
+	"Finding=finding"],
+	"returnRowStart": 17,
+	"columnClusterSize": 2,
+	"showAllOthers": true,
+	"multicharts": {
+		"Opened-and-Closed-Investigations-_A-Assessments": [{
+			"chartType": "line",
+			"labels": {
+				"x": "",
+				"y": ""
+			}
+		}],
+		"Opened-Investigations-_A-Assessments": [{
+			"chartType": "line",
+			"chartId": "chart1",
+			"labels": {
+				"x": "",
+				"y": ""
+			},
+			"hideColumns": [1]
+		}],
+		"Closed-Investigations-_A-Assessments": [{
+			"chartType": "line",
+			"chartId": "chart1",
+			"labels": {
+				"x": "",
+				"y": ""
+			},
+			"hideColumns": [0]
+		}]
+	},
+	"numberFormat": [{
+		"fractionDigits": 2
+	}]
+}

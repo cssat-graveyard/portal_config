@@ -1,0 +1,62 @@
+{
+  "table": "sp_discharge_exit_over_time",
+  "title": "All Exits from Out-of-Home Care - Combined Results",
+  "transform": {
+    "Function": "trim",
+    "table": "sp_discharge_exit_over_time",
+    "dateField": "Cohort Entry Date"
+  },
+  "controls": [
+    "date_type"
+  ],
+  "params": [
+    "quarterEntry",
+    "age",
+    "ethnicityCensus",
+    "gender",
+    "initSetng",
+    "lastSetng",
+    "IGNORE",
+    "removalCounty"
+  ],
+  "dateParams": [],
+  "requiredParams": [
+    "quarterEntry"
+  ],
+  "showAllOthers": true,
+  "returnRowHeaders": [
+    0,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    12
+  ],
+  "returnRowDateHeaders": [
+    0
+  ],
+  "returnRowStart": 13,
+  "columnClusterSize": 6,
+  "multicharts": {
+    "Default": [
+      {
+        "chartType": "line",
+        "chartId": "chart1",
+        "style": "",
+        "labels": {
+          "x": "Months Since Entering",
+          "y": "Percentage Achieving Outcome"
+        },
+        "hideColumns": [
+          0
+        ]
+      }
+    ]
+  },
+  "labels": {
+    "x": "Months Since Entering",
+    "y": "Percentage Achieving Outcome"
+  }
+}

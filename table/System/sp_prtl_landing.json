@@ -1,0 +1,78 @@
+{
+  "title": "prtl_landing",
+  "table": "sp_prtl_landing",
+  "transform": {
+    "Function": "daterow",
+    "dateField": "start_date",
+    "valueFields": [
+      "tot_start_day",
+      "tot_added",
+      "tot_subtracted",
+      "tot_last_day"
+    ],
+    "removeFields": []
+  },
+  "controls": [
+    "service_type",
+    "date_type"
+  ],
+  "params": [],
+  "dateParams": [],
+  "requiredParams": [],
+  "showAllOthers": true,
+  "returnRowHeaders": [
+    0
+  ],
+  "returnRowStart": 7,
+  "columnClusterSize": "4",
+  "charts": [
+    {
+      "chartType": "column",
+      "chartId": "chart1",
+      "baseOptions": {
+        "width": 615,
+        "height": 215,
+        "chartArea": {
+          "left": 75,
+          "top": 10,
+          "width": "85%",
+          "height": "90%"
+        }
+      },
+      "labels": {
+        "x": "Month",
+        "y": "Volume"
+      },
+      "hideColumns": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "chartType": "line",
+      "chartId": "chart2",
+      "baseOptions": {
+        "width": 615,
+        "height": 215,
+        "chartArea": {
+          "left": 75,
+          "top": 10,
+          "width": "85%",
+          "height": "75%"
+        }
+      },
+      "labels": {
+        "x": "Month",
+        "y": "Number"
+      },
+      "hideColumns": [
+        0,
+        3
+      ]
+    }
+  ],
+  "numberFormat": {
+    "fractionDigits": 0
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "Base": "sp_discharge_exit_over_time",
+  "title": "Other - Combined Results",
+  "filter": "Discharge_Type_Cd = 6",
+  "chartType": "line",
+  "multicharts": null
+}

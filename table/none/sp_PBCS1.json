@@ -1,0 +1,43 @@
+{
+  "table": "sp_PBCS1",
+  "title": "Re-Referrals With Services",
+  "transform": {
+    "Function": "daterow",
+    "dateField": "Months",
+    "valueFields": [
+      "Re-Referral",
+      "Re-Referral And Initial Founded",
+      "Re-Referral Among Initial Founded"
+    ],
+    "removeFields": []
+  },
+  "params": [
+    "quarterStart",
+    "age",
+    "ethnicityCensus",
+    "gender",
+    "office"
+  ],
+  "dateParams": [],
+  "requiredParams": [
+    "quarterStart"
+  ],
+  "showAllOthers": true,
+  "returnRowHeaders": [
+    0,
+    1,
+    4,
+    6,
+    8,
+    10
+  ],
+  "returnRowDateHeaders": [
+    1
+  ],
+  "returnRowStart": 11,
+  "chartType": "line",
+  "labels": {
+    "x": "Months Since Initial Referral",
+    "y": "Percentage of Children"
+  }
+}

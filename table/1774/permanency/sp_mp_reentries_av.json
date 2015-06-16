@@ -1,0 +1,36 @@
+{
+	"table": "sp_mp_reentries_av",
+	"title": "Percent of Children Re-Entering Care",
+	"subtitle": "Within One Year of Exiting Out-of-Home Care",
+	"dropdown": "Re-Entry into Care Within One Year",
+	"measurementOrder": 6,
+	"transform": {
+		"Function": "daterow",
+		"dateField": "Fiscal Year/Year Exited Out-of-Home Care",
+		"valueFields": ["Percent"],
+		"removeFields": []
+	},
+	"controls": ["region"],
+	"params": ["dynamicMonthStart"],
+	"dateParams": [],
+	"requiredParams": ["dynamicMonthStart"],
+	"showAllOthers": true,
+	"returnRowHeaders": [0,
+	1],
+	"returnRowDateHeaders": [],
+	"returnRowControlHeaders": [0,
+	1],
+	"headerNames": ["&nbsp;",
+	"Region*region"],
+	"returnRowStart": 2,
+	"chartType": "line",
+	"labels": {
+		"x": "",
+		"y": "",
+		"yFormat": "##'%"
+	},
+	"numberFormat": {
+		"fractionDigits": 2,
+		"suffix": "%"
+	}
+}

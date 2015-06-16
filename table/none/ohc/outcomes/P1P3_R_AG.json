@@ -1,0 +1,7 @@
+{
+  "Base": "sp_discharge_exit_over_time",
+  "title": "Reunification - Combined Results",
+  "filter": "Discharge_Type_Cd = 1",
+  "chartType": "line",
+  "multicharts": null
+}

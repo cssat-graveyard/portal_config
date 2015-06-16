@@ -1,0 +1,5 @@
+{
+  "Base": "sp_P1P3_PRTL",
+  "title": "Other Exits - Aggregate",
+  "filter": "exit_type_cd = 2"
+}

@@ -1,0 +1,5 @@
+{
+  "Base": "sp_P1P3_PRTL_MR",
+  "title": "Safe Permanency - Comparison",
+  "filter": "exit_type_cd = 1"
+}

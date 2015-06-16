@@ -1,0 +1,31 @@
+{
+	"table": "sp_mp_post_secondary_completion_pvt",
+	"title": "Percent of Students Completing Post-Secondary Education",
+	"dropdown": "College Completion",
+	"subtitle": "Within One Year of High School Graduation",
+	"measurementOrder": 4,
+	"controls": ["cohort_year_grad_college"],
+	"params": [],
+	"dateParams": [],
+	"requiredParams": [],
+	"showAllOthers": true,
+	"returnRowHeaders": [0
+	],
+	"returnRowDateHeaders": [],
+	"returnRowControlHeaders": [0
+	],
+	"headerNames": ["Cohort Period=cohort_year_grad_college"],
+	"hideRow": "anyEmpty",
+	"chartType": "column",
+	"columnClusterSize": 3,
+	"returnRowStart": 1,
+	"labels": {
+		"x": "",
+		"y": "",
+		"yFormat": "##'%"
+	},
+	"numberFormat": {
+		"fractionDigits": 2,
+		"suffix": "%"
+	}
+}

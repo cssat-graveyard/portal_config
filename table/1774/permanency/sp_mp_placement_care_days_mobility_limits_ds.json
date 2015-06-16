@@ -1,0 +1,38 @@
+{
+	"table": "sp_mp_placement_care_days_mobility_limits_ds",
+	"title": "Rate of Out-of-Home Care Placement Moves",
+	"subtitle": "Per 100,000 Care-Days",
+	"dropdown": "Placement Moves",
+	"measurementOrder": 1,
+	"transform": {
+		"Function": "daterow",
+		"dateField": "Fiscal Year/Year in Out-of-Home Care",
+		"valueFields": ["Rate"],
+		"removeFields": []
+	},
+	"controls": ["region",
+	"years_in_care"],
+	"params": ["dynamicMonthStart"],
+	"dateParams": [],
+	"requiredParams": ["dynamicMonthStart"],
+	"showAllOthers": true,
+	"returnRowHeaders": [0,
+	1,
+	2],
+	"returnRowDateHeaders": [0],
+	"returnRowControlHeaders": [0,
+	1,
+	2],
+	"headerNames": ["&nbsp;",
+	"Region*region",
+	"Years in Care*years_in_care"],
+	"returnRowStart": 3,
+	"chartType": "line",
+	"labels": {
+		"x": "",
+		"y": ""
+	},
+	"numberFormat": {
+		"fractionDigits": 2
+	}
+}

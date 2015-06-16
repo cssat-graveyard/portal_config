@@ -1,0 +1,5 @@
+{
+  "Base": "sp_PBCP2P4",
+  "title": "Non Exits from Long Term Care",
+  "filter": "exit_type_cd = 0"
+}

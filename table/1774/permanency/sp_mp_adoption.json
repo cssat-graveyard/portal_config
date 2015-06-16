@@ -1,0 +1,34 @@
+{
+	"table": "sp_mp_adoption",
+	"title": "Percent of Children Adopted",
+	"subtitle": "Within One Year of Becoming Legally Free",
+	"dropdown": "Adoption Within One Year",
+	"measurementOrder": 5,
+	"transform": {
+		"Function": "daterow",
+		"dateField": "Fiscal Year/Year Child Became Legally Free",
+		"valueFields": ["Percent"],
+		"removeFields": []
+	},
+	"controls": ["region"],
+	"params": ["dynamicMonthStart"],
+	"dateParams": [],
+	"requiredParams": ["dynamicMonthStart"],
+	"showAllOthers": true,
+	"returnRowHeaders": [1],
+	"returnRowDateHeaders": [],
+	"returnRowControlHeaders": [1],
+	"headerNames": ["&nbsp;",
+	"Region*region"],
+	"returnRowStart": 2,
+	"chartType": "line",
+	"labels": {
+		"x": "",
+		"y": "",
+		"yFormat": "##'%"
+	},
+	"numberFormat": {
+		"fractionDigits": 2,
+		"suffix": "%"
+	}
+}

@@ -1,0 +1,39 @@
+{
+  "table": "sp_PBCP2P4",
+  "title": "Exits From Long Stay",
+  "params": [
+    "quarterCompellingReasonEntry",
+    "age",
+    "ethnicityCensus",
+    "gender",
+    "initSetng",
+    "lastSetng",
+    "removalReason",
+    "removalCounty"
+  ],
+  "dateParams": [],
+  "requiredParams": [
+    "quarterCompellingReasonEntry"
+  ],
+  "showAllOthers": false,
+  "returnRowHeaders": [
+    0,
+    3,
+    5,
+    7,
+    9,
+    11,
+    13,
+    15,
+    17
+  ],
+  "returnRowDateHeaders": [
+    0
+  ],
+  "returnRowStart": 18,
+  "chartType": "line",
+  "labels": {
+    "x": "Length of Stay at Outcome",
+    "y": "Percentage Achieving Case Outcome"
+  }
+}

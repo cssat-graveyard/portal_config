@@ -1,0 +1,5 @@
+{
+  "Base": "sp_PBCP5",
+  "title": "Re-Entry from Adoption",
+  "filter": "discharge_type_cd = 3"
+}

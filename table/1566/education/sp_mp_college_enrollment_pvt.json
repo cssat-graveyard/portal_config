@@ -1,0 +1,41 @@
+{
+  "table": "sp_mp_college_enrollment_pvt",
+  "title": "Percent of Students Enrolled in College",
+  "subtitle": "Within One Year of High School Graduation",
+  "dropdown": "College Enrollment",
+  "measurementOrder": 3,
+  "controls": [
+    "disability",
+    "HS_grad_yr"
+  ],
+  "params": [],
+  "dateParams": [],
+  "requiredParams": [],
+  "showAllOthers": true,
+  "returnRowHeaders": [
+    0,
+    1
+  ],
+  "returnRowDateHeaders": [],
+  "returnRowControlHeaders": [
+    0,
+    1
+  ],
+  "headerNames": [
+    "Cohort Period*HS_grad_yr",
+    "fl_disability*disability"
+  ],
+  "returnRowStart": 2,
+  "hideRow": "allEmpty",
+  "columnClusterSize": 3,
+  "chartType": "column",
+  "labels": {
+    "x": "",
+    "y": "",
+    "yFormat": "##'%"
+  },
+  "numberFormat": {
+    "fractionDigits": 2,
+    "suffix": "%"
+  }
+}

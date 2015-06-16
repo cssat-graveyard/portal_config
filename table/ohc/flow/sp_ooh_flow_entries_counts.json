@@ -1,0 +1,97 @@
+{
+  "table": "sp_ooh_flow_entries_counts",
+  "title": "Count of Children Entering Out-of-Home Care",
+  "measurementOrder": 1,
+  "transform": {
+    "Function": "daterow",
+    "dateField": "Cohort Period",
+    "valueFields": [
+      "Number of Entries"
+    ],
+    "removeFields": []
+  },
+  "controls": [
+    "qry_type_entries",
+    "date_type"
+  ],
+  "params": [
+    "dynamicMonthStart",
+    "ageCensus",
+    "ethnicityCensus",
+    "gender",
+    "initSetng",
+    "longSetng",
+    "removalCounty",
+    "ooh_los",
+    "nbr_placement",
+    "ihs_services_ooh",
+    "reporter_type",
+    "access_type",
+    "allegation",
+    "finding",
+    "ignore_service_category",
+    "ignore_budget_category",
+    "dependency_cd"
+  ],
+  "dateParams": [],
+  "requiredParams": [
+    "dynamicMonthStart"
+  ],
+  "showAllOthers": true,
+  "returnRowHeaders": [
+    0,
+	1,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14,
+    16,
+    18,
+    20,
+    22,
+    24,
+    26,
+    28,
+    30,
+    32,
+    34
+  ],
+  "returnRowDateHeaders": [
+    0
+  ],
+  "returnRowControlHeaders": [
+    1
+  ],
+  "headerNames": [
+    "&nbsp;",
+    "qry_type_poc1*qry_type_entries",
+    "Age Grouping=ageCensus",
+    "Gender=gender",
+    "Race/Ethnicity",
+    "Initial Placement=initSetng",
+    "Longest Placement=longSetng",
+    "County=removalCounty",
+    "Dependency=dependency_cd",
+    "Length of Service Desc=ooh_los",
+    "Placement Count Desc=nbr_placement",
+    "In-Home Service Desc=ihs_services_ooh",
+    "Reporter Desc=reporter_type",
+    "Access type desc=access_type",
+    "Allegation=allegation",
+    "Finding=finding",
+    "Service Type=service_category",
+    "Budget=budget_category"
+  ],
+  "returnRowStart": 35,
+  "chartType": "line",
+  "labels": {
+    "x": "",
+	"y": ""
+  },
+  "numberFormat": {
+      "fractionDigits": 0
+  },
+	"hideRow": "allEmpty"
+}
