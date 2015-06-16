@@ -10,11 +10,16 @@ These are the config files for the POC Data Portal. There are a few key types of
 
 ## Workflow
 
-Clone the repo and checkout the dev branch. Next, create a new branch locally named for whatever you are doing. So, for example, if you need to remove budget filters from all visualizations, you might name your branch "remove-budget-filters."
+These steps aassume that you are using GitHub for Windows. The same can be accomplished from the command line.
 
-Do your work locally and test on your local Data Portal copy. When everything looks right and you think you are done, push your branch to GitHub and take out a pull request describing what you did and any questions you might have.
+1. Clone this repo locally
 
-Within 48 hours (72 if there is a weekend in the middle), Gregor or Erika will review your pull request and merge changes into the dev branch if everything looks ok. Once that's done, you can delete your local branch and pull changes from GitHub.
+2. Check out the dev branch from the dropdown at the top that says "master"
 
-If you are working locally for a longer period of time, *remember to pull changes* that others may have been working on to avoid conflicts down the road.
+3. Click "Manage" in the dropdown to go to the branch manager window. Click on the plus sign next to the branch you are currently on to create a new branch. Name it something meaningful related to what you are working on.
 
+4. Make and commit your changes to your local branch, then click "Publish" in the upper right-hand corner. To the left of the Publish/Sync button is the pull request button; click that to send a pull request indicating that you are done with your changes and want to merge them in with the group's work.
+
+5. Gregor or Erika will review your changes and either comment/ask for additional work or merge your changes and close the pull request.
+
+Remember, if you are working locally for a long time, you should check for new changes on the dev branch and merge them into your own work periodically. This will help you stay up to date and help the team avoid conflicting changes.
