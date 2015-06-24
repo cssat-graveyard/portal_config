@@ -5,7 +5,7 @@
 	"measurementOrder": 1,
 	"transform": {
 		"Function": "daterow",
-		"dateField": "Months Since Screened-In Investigation/Assessment",
+		"dateField": "Months Since Screened-In WOOOO Investigation/Assessment",
 		"valueFields": ["Percent"],
 		"removeFields": [],
 		"table": "sp_ia_safety"
