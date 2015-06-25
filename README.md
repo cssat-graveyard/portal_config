@@ -10,7 +10,7 @@ These are the config files for the POC Data Portal. There are a few key types of
 
 ## Workflow
 
-These steps aassume that you are using GitHub for Windows. The same can be accomplished from the command line.
+These steps assume that you are using GitHub for Windows. The same can be accomplished from the command line.
 
 1. Clone this repo locally
 
@@ -18,8 +18,10 @@ These steps aassume that you are using GitHub for Windows. The same can be accom
 
 3. Click "Manage" in the dropdown to go to the branch manager window. Click on the plus sign next to the branch you are currently on to create a new branch. Name it something meaningful related to what you are working on.
 
-4. Make and commit your changes to your local branch, then click "Publish" in the upper right-hand corner. To the left of the Publish/Sync button is the pull request button; click that to send a pull request indicating that you are done with your changes and want to merge them in with the group's work.
+4. Make and commit your changes to your local branch, then click "Publish" in the upper right-hand corner. 
 
-5. Gregor or Erika will review your changes and either comment/ask for additional work or merge your changes and close the pull request.
+5. To the left of the Publish/Sync button is the pull request button; click that to send a pull request indicating that you are done with your changes and want to merge them in with the group's work. Describe what you want to do and *make sure you request to merge into the dev branch*
+
+6. Gregor or Erika will review your changes and either comment/ask for additional work or merge your changes and close the pull request.
 
 Remember, if you are working locally for a long time, you should check for new changes on the dev branch and merge them into your own work periodically. This will help you stay up to date and help the team avoid conflicting changes.
