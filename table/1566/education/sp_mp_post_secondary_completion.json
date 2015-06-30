@@ -9,11 +9,10 @@
 	"dateParams": [],
 	"requiredParams": [],
 	"showAllOthers": true,
-	"returnRowHeaders": [0
-	],
+	"returnRowHeaders": [0,
+	1],
 	"returnRowDateHeaders": [],
-	"returnRowControlHeaders": [0
-	],
+	"returnRowControlHeaders": [0,1],
 	"headerNames": ["Cohort Period=cohort_year_grad_college"],
 	"hideRow": "anyEmpty",
 	"chartType": "column",
