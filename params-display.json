@@ -4,7 +4,7 @@
     "_comment2": "The values are computed by the client.",
     "display": {
       "legend": "Graph Display",
-      "column": "fieldsRight",
+      "column": "displayFields",
       "type": "filter",
       "selected": "Overview",
       "help": {
@@ -24,7 +24,7 @@
     "table": "ref_lookup_age_cdc_census_mix",
     "display": {
       "legend": "Age at Exit",
-      "column": "fieldsRight",
+      "column": "demographicFields",
       "type": "param",
       "help": "This filter references the child’s age when they exited out-of-home care."
     }
@@ -33,7 +33,7 @@
     "table": "ref_lookup_age_cdc_census_mix",
     "display": {
       "legend": "Age at Entry",
-      "column": "fieldsRight",
+      "column": "demographicFields",
       "type": "param",
       "help": "This filter references the child’s age when they entered out-of-home care."
     }
@@ -42,7 +42,7 @@
     "table": "ref_lookup_age_cdc_census_mix",
     "display": {
       "legend": "Age of Child",
-      "column": "fieldsRight",
+      "column": "demographicFields",
       "type": "param",
       "help": "Age references the child’s age on the first day of the year(s)."
     }
@@ -52,7 +52,7 @@
     "valueColumn": 3,
     "display": {
       "legend": "Age at Removal",
-      "column": "fieldsRight",
+      "column": "demographicFields",
       "type": "param",
       "help": "Age references the child’s age at the time s/he was removed from their home and placed into out-of-home care (e.g., kinship care, foster care). The age categories are based on U.S. Census classifications, allowing age to be calculated per 1,000 children in individual counties."
     }
@@ -62,7 +62,7 @@
     "valueColumn": 3,
     "display": {
       "legend": "Age of Children",
-      "column": "fieldsRight",
+      "column": "demographicFields",
       "type": "param",
       "help": "The age filter references a child’s age on a given date (i.e., the first day of the selected year(s) or quarter(s)). The age categories are based on U.S. Census classifications, allowing age to be calculated per 1,000 children in individual counties. "
     }
@@ -71,7 +71,7 @@
     "table": "vw_age_developmental_exits",
     "display": {
       "legend": "Age at Exit",
-      "column": "fieldsRight",
+      "column": "demographicFields",
       "type": "param",
       "help": "The age categories for children who exit out-of-home care includes youth through the 18th year in order to account for all emancipations, which can continue through the 18th year. (Other age categories in the Data Portal go through age 17.)"
     }
@@ -84,7 +84,7 @@
     },
     "display": {
       "legend": "Re-Entry by Exit Type",
-      "column": "fieldsRight",
+      "column": "displayFields",
       "type": "filter",
       "multi": true,
       "zeroLast": false,
@@ -105,7 +105,7 @@
     ],
     "display": {
       "legend": "Age of Children in Household",
-      "column": "fieldsRight",
+      "column": "demographicFields",
       "type": "param",
       "help": {
         "default": "This filter references the ages of the children in the household at the time the reportwas investigated/assessed. The age categories follow U.S. Census classifications, allowing the rate of cases per 1,000 households to be calculated.",
@@ -117,7 +117,7 @@
     "table": "ref_lookup_type_of_exit",
     "display": {
       "legend": "Outcome",
-      "column": "fieldsRight",
+      "column": "displayFields",
       "type": "filter",
       "multi": true,
       "zeroLast": true,
@@ -136,7 +136,7 @@
     "table": "ref_lookup_cd_discharge_type_exits",
     "display": {
       "legend": "Permanency Type",
-      "column": "fieldsRight",
+      "column": "displayFields",
       "type": "filter",
       "multi": true,
       "zeroLast": true,
@@ -157,7 +157,7 @@
     },
     "display": {
       "legend": "Sibling Group Size",
-      "column": "fieldsLeft",
+      "column": "demographicFields",
       "type": "filter",
       "multi": true,
       "zeroLast": false,
@@ -174,7 +174,7 @@
     },
     "display": {
       "legend": "Sibling Grouping",
-      "column": "fieldsLeft",
+      "column": "displayFields",
       "type": "filter",
       "multi": true,
       "zeroLast": false,
@@ -191,7 +191,7 @@
     },
     "display": {
       "legend": "Placement Type",
-      "column": "advancedLeft",
+      "column": "advancedFields",
       "type": "filter",
       "multi": true,
       "zeroLast": true,
@@ -210,7 +210,7 @@
     ],
     "display": {
       "legend": "Race/Ethnicity",
-      "column": "fieldsRight",
+      "column": "demographicFields",
       "type": "param",
       "zeroLast": false,
       "sort": "raceEthnicityCompare",
@@ -226,7 +226,7 @@
     ],
     "display": {
       "legend": "Gender",
-      "column": "fieldsRight",
+      "column": "demographicFields",
       "type": "param"
     }
   },
@@ -234,7 +234,7 @@
     "table": "ref_lookup_placement",
     "display": {
       "legend": "Initial Placement Setting",
-      "column": "advancedLeft",
+      "column": "advancedFields",
       "type": "param",
       "visible": false,
       "help": {
@@ -251,7 +251,7 @@
     "table": "ref_lookup_placement",
     "display": {
       "legend": "Longest Placement Setting",
-      "column": "advancedLeft",
+      "column": "advancedFields",
       "type": "param",
       "visible": false,
       "help": {
@@ -272,7 +272,7 @@
     },
     "display": {
       "legend": "Count Type",
-      "column": "fieldsRight",
+      "column": "displayFields",
       "type": "filter",
       "multi": true,
       "zeroLast": false,
@@ -290,7 +290,7 @@
     },
     "display": {
       "legend": "Count Type",
-      "column": "fieldsRight",
+      "column": "displayFields",
       "type": "filter",
       "multi": true,
       "zeroLast": false,
@@ -304,7 +304,7 @@
     "table": "vw_qry_type_poc1ab_first_all",
     "display": {
       "legend": "Count Type",
-      "column": "fieldsRight",
+      "column": "displayFields",
       "type": "filter",
       "multi": true,
       "zeroLast": false,
@@ -320,7 +320,7 @@
     },
     "display": {
       "legend": "Count Type",
-      "column": "fieldsRight",
+      "column": "displayFields",
       "type": "filter",
       "multi": true,
       "zeroLast": false,
@@ -336,7 +336,7 @@
     },
     "display": {
       "legend": "Count Type",
-      "column": "fieldsRight",
+      "column": "displayFields",
       "type": "filter",
       "multi": true,
       "zeroLast": false,
@@ -349,7 +349,7 @@
     "table": "ref_lookup_qry_type",
     "display": {
       "legend": "Count Type",
-      "column": "fieldsRight",
+      "column": "displayFields",
       "type": "filter",
       "multi": true,
       "zeroLast": false,
@@ -366,7 +366,7 @@
     },
     "display": {
       "legend": "Count Type",
-      "column": "fieldsRight",
+      "column": "displayFields",
       "type": "filter",
       "multi": true,
       "zeroLast": false,
@@ -379,7 +379,7 @@
     "table": "ref_lookup_qry_type_poc2",
     "display": {
       "legend": "Count Type",
-      "column": "fieldsRight",
+      "column": "displayFields",
       "type": "filter",
       "multi": true,
       "zeroLast": false,
@@ -393,7 +393,7 @@
     "table": "ref_lookup_service_type",
     "display": {
       "legend": "Service",
-      "column": "advancedRight",
+      "column": "advancedFields",
       "type": "filter",
       "selected": 0,
       "visible": false
@@ -403,7 +403,7 @@
     "table": "ref_lookup_date_type",
     "display": {
       "legend": "Date(s)",
-      "column": "fieldsLeft",
+      "column": "dateFields",
       "type": "dateType",
       "selected": 2,
       "format": {
@@ -417,7 +417,7 @@
     "table": "ref_lookup_date_type",
     "display": {
       "legend": "Cohort Duration",
-      "column": "fieldsLeft",
+      "column": "dateFields",
       "type": "dateType",
       "selected": 2,
       "alias": "date_type",
@@ -433,7 +433,7 @@
     "table": "ref_lookup_date_type",
     "display": {
       "legend": "Point-in-Time",
-      "column": "fieldsLeft",
+      "column": "dateFields",
       "type": "dateType",
       "selected": 2,
       "alias": "date_type",
@@ -448,7 +448,7 @@
     "orderBy": "ordering",
     "display": {
       "legend": "Reporter",
-      "column": "advancedLeft",
+      "column": "advancedFields",
       "type": "param",
       "multi": true,
       "visible": false,
@@ -462,7 +462,7 @@
     ],
     "display": {
       "legend": "Entry Point",
-      "column": "advancedLeft",
+      "column": "advancedFields",
       "type": "param",
       "multi": true,
       "zeroLast": true,
@@ -477,7 +477,7 @@
     "table": "ref_filter_allegation",
     "display": {
       "legend": "Allegations",
-      "column": "advancedLeft",
+      "column": "advancedFields",
       "type": "param",
       "multi": true,
       "visible": false,
@@ -488,7 +488,7 @@
     "table": "ref_filter_finding",
     "display": {
       "legend": "Allegation Finding",
-      "column": "advancedLeft",
+      "column": "advancedFields",
       "type": "param",
       "multi": true,
       "visible": false,
@@ -499,7 +499,7 @@
     "table": "ref_filter_nbr_placement",
     "display": {
       "legend": "Number of Placements Settings",
-      "column": "advancedRight",
+      "column": "advancedFields",
       "type": "param",
       "multi": true,
       "visible": false,
@@ -519,7 +519,7 @@
     "table": "ref_filter_los",
     "display": {
       "legend": "Duration of Out-of-Home Stay",
-      "column": "advancedRight",
+      "column": "advancedFields",
       "type": "param",
       "multi": true,
       "visible": false,
@@ -539,7 +539,7 @@
     "table": "ref_filter_dependency",
     "display": {
       "legend": "Court Involvement",
-      "column": "advancedRight",
+      "column": "advancedFields",
       "type": "filter",
       "multi": true,
       "selected": 0,
@@ -551,7 +551,7 @@
     "table": "ref_filter_ihs_services",
     "display": {
       "legend": "In-Home Services",
-      "column": "advancedRight",
+      "column": "advancedFields",
       "type": "param",
       "multi": true,
       "selected": 0,
@@ -581,7 +581,7 @@
     "date": true,
     "display": {
       "legend": "First Day of Year",
-      "column": "fieldsLeft",
+      "column": "dateFields",
       "type": "filter",
       "multi": true,
       "selected": "2015",
@@ -609,7 +609,7 @@
     },
     "display": {
       "legend": "Entry Cohort Year",
-      "column": "fieldsLeft",
+      "column": "dateFields",
       "type": "filter",
       "multi": true,
       "selected": "2010",
@@ -631,7 +631,7 @@
     },
     "display": {
       "legend": "Investigation/Assessment Cohort Period",
-      "column": "fieldsLeft",
+      "column": "dateFields",
       "type": "filter",
       "multi": true,
       "zeroLast": false,
@@ -663,7 +663,7 @@
     },
     "display": {
       "legend": "Exit Cohort Year",
-      "column": "fieldsLeft",
+      "column": "dateFields",
       "type": "filter",
       "multi": true,
       "zeroLast": false,
@@ -685,7 +685,7 @@
     },
     "display": {
       "legend": "Expected High School Graduation Year",
-      "column": "fieldsLeft",
+      "column": "dateFields",
       "type": "filter",
       "multi": true,
       "zeroLast": false,
@@ -699,7 +699,7 @@
     "date": true,
     "display": {
       "legend": "Date Range",
-      "column": "fieldsLeft",
+      "column": "dateFields",
       "type": "dynamicDateRange",
       "monthStep": 1,
       "monthLimit": 0,
@@ -710,7 +710,7 @@
     "table": "ref_lookup_county",
     "display": {
       "legend": "Removal County",
-      "column": "advancedRight",
+      "column": "locationFields",
       "type": "param",
       "visible": false,
       "help": "This is the county the data suggests the child lived in prior to removal. You can select any of Washington State’s 39 counties; ‘All’ (the default) returns statewide data."
@@ -720,7 +720,7 @@
     "table": "ref_lookup_county",
     "display": {
       "legend": "Placement County",
-      "column": "advancedRight",
+      "column": "locationFields",
       "type": "param",
       "visible": false,
       "help": "This is the county the child was placed in on this date. You can select any of Washington State’s 39 counties; ‘All’ (default) returns statewide data."
@@ -730,7 +730,7 @@
     "table": "ref_lookup_county",
     "display": {
       "legend": "Exit County",
-      "column": "advancedRight",
+      "column": "locationFields",
       "type": "param",
       "visible": false,
       "help": "The location of the child when s/he received a federal discharge (reunification, adoption, guardianship) or was emancipated (turned 18 years old)."
@@ -740,7 +740,7 @@
     "table": "ref_lookup_county",
     "display": {
       "legend": "Exit County",
-      "column": "advancedRight",
+      "column": "locationFields",
       "type": "param",
       "visible": false,
       "help": "The location of the child when s/he received a federal discharge (reunification, adoption, guardianship) or was emancipated (turned 18 years old)."
@@ -750,7 +750,7 @@
     "table": "ref_lookup_county",
     "display": {
       "legend": "Reporting County",
-      "column": "advancedRight",
+      "column": "locationFields",
       "type": "param",
       "visible": false,
       "help": "This is the county where the report was investigated/assessed. You can select any of Washington State’s 39 counties; ‘All’ (the default) returns statewide data."
@@ -760,7 +760,7 @@
     "table": "ref_lookup_disability",
     "display": {
       "legend": "Disability",
-      "column": "fieldsRight",
+      "column": "demographicFields",
       "type": "filter",
       "multi": true,
       "selected": 0,
@@ -776,7 +776,7 @@
     },
     "display": {
       "legend": "Placement Move Type",
-      "column": "fieldsRight",
+      "column": "displayFields",
       "type": "filter",
       "multi": true,
       "sort": true,
@@ -793,7 +793,7 @@
     },
     "display": {
       "legend": "Third Grade Entry Year",
-      "column": "fieldsLeft",
+      "column": "dateFields",
       "type": "filter",
       "multi": true,
       "zeroLast": false,
@@ -811,7 +811,7 @@
     },
     "display": {
       "legend": "Student Type",
-      "column": "fieldsRight",
+      "column": "demographicFields",
       "type": "filter",
       "multi": true,
       "zeroLast": false,
@@ -834,7 +834,7 @@
     },
     "display": {
       "legend": "Region",
-      "column": "fieldsLeft",
+      "column": "locationFields",
       "type": "filter",
       "multi": true,
       "selected": 0,
@@ -852,7 +852,7 @@
     },
     "display": {
       "legend": "Age",
-      "column": "fieldsRight",
+      "column": "demographicFields",
       "type": "filter",
       "multi": true,
       "zeroLast": false,
@@ -872,7 +872,7 @@
     },
     "display": {
       "legend": "Entry Point",
-      "column": "fieldsRight",
+      "column": "displayFields",
       "type": "filter",
       "multi": true,
       "zeroLast": true,
@@ -892,7 +892,7 @@
     },
     "display": {
       "legend": "Prior Number",
-      "column": "fieldsRight",
+      "column": "displayFields",
       "type": "filter",
       "multi": true,
       "zeroLast": false,
@@ -905,7 +905,7 @@
     "table": "ref_lookup_years_in_care",
     "display": {
       "legend": "Years in Care",
-      "column": "fieldsRight",
+      "column": "dateFields",
       "type": "filter",
       "multi": true,
       "zeroLast": false,
@@ -926,7 +926,7 @@
     },
     "display": {
       "legend": "College Graduation Year",
-      "column": "fieldsLeft",
+      "column": "dateFields",
       "type": "filter",
       "multi": true,
       "zeroLast": false,
@@ -943,7 +943,7 @@
     },
     "display": {
       "legend": "High School Graduation Year",
-      "column": "fieldsLeft",
+      "column": "dateFields",
       "type": "filter",
       "multi": true,
       "zeroLast": false,
