@@ -1,0 +1,67 @@
+{
+  "table": "sp_ia_safety",
+  "title": "Re-Referrals",
+  "transform": {
+    "Function": "daterow",
+    "dateField": "Months Since 1st Investigation/Assessment",
+    "valueFields": [
+      "Among first referrals, percent that are re-referred"
+    ],
+    "removeFields": [],
+	"table": "sp_ia_safety"
+  },
+  "controls": [
+    "qry_type_first_unique_ia_safety",
+	"cohort_year_ia_safety"
+  ],
+  "params": [
+    "ageSib",
+    "ethnicityCensus",
+    "Ref_Serv_County",
+    "reporter_type",
+    "access_type",
+    "allegation",
+    "finding"
+  ],
+  "dateParams": [],
+  "requiredParams": [],
+  "showAllOthers": true,
+  "returnRowHeaders": [
+	0,
+    1,
+	2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14,
+    16
+  ],
+  "returnRowDateHeaders": [],
+  "returnRowControlHeaders": [],
+  "headerNames": [
+	"&nbsp;",
+	"qry_type*qry_type_first_unique_ia_safety",
+	"Cohort Period*cohort_year_ia_safety",
+	"Age Grouping=ageSib",
+	"Race/Ethnicity",
+	"County=Ref_Serv_County",
+	"Reporter Desc=reporter_type",
+	"Access type desc=access_type",
+	"Allegation=allegation",
+	"Finding=finding"
+  ],
+  "returnRowStart": 17,
+  "hideRow": "allEmpty",
+  "chartType": "line",
+  "labels": {
+    "x": "Months Since 1st Investigation/Assessment",
+    "y": "",
+    "yFormat": "##'%"
+  },
+  "numberFormat": {
+    "fractionDigits": 2,
+	"suffix": "%"
+  }
+}

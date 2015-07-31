@@ -1,0 +1,40 @@
+{
+	"table": "sp_mp_placement_care_days_otr_limits",
+	"title": "Rate of Children in Out-of-Home Care On-the-Run",
+	"subtitle": "",
+	"dropdown": "Children On-the-Run",
+	"measurementOrder": 3,
+	"transform": {
+		"Function": "daterow",
+		"dateField": "Fiscal Year/Year in Out-of-Home Care",
+		"valueFields": ["Percent"],
+		"removeFields": []
+	},
+	"controls": ["region",
+	"otr_age_in_care"],
+	"params": ["dynamicMonthStart"],
+	"dateParams": [],
+	"requiredParams": ["dynamicMonthStart"],
+	"showAllOthers": true,
+	"returnRowHeaders": [0,
+	1,
+	2],
+	"returnRowDateHeaders": [0],
+	"returnRowControlHeaders": [0,
+	1,
+	2],
+	"headerNames": ["&nbsp;",
+	"Region*region",
+	"Age*otr_age_in_care"],
+	"returnRowStart": 3,
+	"chartType": "line",
+	"labels": {
+		"x": "",
+		"y": "",
+		"yFormat": "##'%"
+	},
+	"numberFormat": {
+		"fractionDigits": 2,
+		"suffix": "%"
+	}
+}

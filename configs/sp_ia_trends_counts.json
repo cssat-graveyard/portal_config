@@ -1,0 +1,121 @@
+{
+  "title": "Count of Investigations & Assessments",
+  "Base": "sp_ia_trends_rates",
+  "measurementOrder": 1,
+  "table": "sp_ia_trends_counts",
+  "transform": {
+    "Function": "daterow",
+    "dateField": "Date",
+    "valueFields": [
+      "Opened Investigations & Assessments",
+      "Closed Investigations & Assessments"
+    ],
+    "removeFields": []
+  },
+  "controls": [
+    "qry_type_poc2",
+    "date_type"
+  ],
+  "params": [
+    "dynamicMonthStart",
+    "ageSib",
+    "ethnicityCensus",
+    "Ref_Serv_County",
+  "reporter_type",
+  "access_type",
+  "allegation",
+  "finding"
+  ],
+  "requiredParams": [
+  "dynamicMonthStart"
+  ],
+  "returnRowHeaders": [
+    1,
+    2,
+    4,
+    6,
+  8,
+  10,
+  12,
+  14,
+  16
+  ],
+  "returnRowDateHeaders": [
+    0
+  ],
+  "returnRowControlHeaders": [
+    1,2
+  ],
+  "headerNames": [
+    "&nbsp;",
+    "*qry_type_poc2",
+    "Age Grouping=ageSib",
+    "Race/Ethnicity",
+    "County=Ref_Serv_County",
+    "Reporter Desc=reporter_type",
+    "Access type desc=access_type",
+    "Allegation=allegation",
+    "Finding=finding"
+  ],
+  "returnRowStart": 17,
+  "columnClusterSize": 2,
+  "showAllOthers": true,
+  "mutexAllOthers": false,
+  "dateParams": [],
+  "hideRow": "allEmpty",
+  "numberFormat": [
+    {
+      "fractionDigits": 0
+    },
+    {
+      "fractionDigits": 0
+    },
+    {
+      "fractionDigits": 0
+    }
+  ],
+  "multicharts": {
+    "Opened-and-Closed-Investigations-_A-Assessments": [
+      {
+        "chartType": "area",
+        "chartId": "chart1",
+        "style": "",
+        "labels": {
+          "x": "",
+          "y": ""
+        },
+        "hideColumns": []
+      }
+    ],
+    "Opened-Investigations-_A-Assessments": [
+      {
+        "chartType": "area",
+        "chartId": "chart1",
+        "style": "",
+        "labels": {
+          "x": "",
+          "y": ""
+        },
+        "hideColumns": [
+          1
+        ],
+         "addInputClass": "multiAllowed"
+      }
+    ],
+    "Closed-Investigations-_A-Assessments": [
+      {
+        "chartType": "area",
+        "chartId": "chart1",
+        "style": "",
+        "labels": {
+          "x": "",
+          "y": ""
+        },
+        "hideColumns": [
+          0
+        ],
+         "addInputClass": "multiAllowed"
+      }
+    ]
+  }
+}

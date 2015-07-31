@@ -1,0 +1,93 @@
+{
+  "table": "sp_ooh_pit_rates",
+  "title": "Rate of Out-of-Home Care per 1,000 Children",
+  "subtitle": "On the First Day of the Year or Quarter",
+  "dropdown": "Rate of Children in Out-of-Home Care",
+  "measurementOrder": 2,
+  "transform": {
+    "Function": "daterow",
+    "dateField": "Date",
+    "valueFields": [
+      "Total in Out-of-Home Care 1st Day"
+    ],
+    "removeFields": []
+  },
+  "controls": [
+    "qry_type_first_all",
+    "date_type_pit"
+  ],
+  "params": [
+    "dynamicMonthStart",
+    "pitAgeCensus",
+    "ethnicityCensus",
+    "gender",
+    "initSetng",
+    "longSetng",
+    "pitCounty",
+    "ooh_los",
+    "nbr_placement",
+    "ihs_services_ooh",
+    "reporter_type",
+    "access_type",
+    "allegation",
+    "finding",
+    "dependency_cd"
+  ],
+  "dateParams": [],
+  "requiredParams": [
+    "dynamicMonthStart"
+  ],
+  "showAllOthers": true,
+  "returnRowHeaders": [
+    0,
+    1,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14,
+    16,
+    18,
+    20,
+    22,
+    24,
+    26,
+    28,
+    30
+  ],
+  "returnRowDateHeaders": [
+    0
+  ],
+  "returnRowControlHeaders": [
+    1
+  ],
+  "headerNames": [
+    "&nbsp;",
+    "*qry_type_first_all",
+    "Age Grouping=pitAgeCensus",
+    "Gender=gender",
+    "Race/Ethnicity",
+    "Initial Placement=initSetng",
+    "Longest Placement=longSetng",
+    "County=pitCounty",
+    "Dependency=dependency_cd",
+    "Length of Service Desc=ooh_los",
+    "Placement Count Desc=nbr_placement",
+    "In-Home Service Desc=ihs_services_ooh",
+    "Reporter Desc=reporter_type",
+    "Access type desc=access_type",
+    "Allegation=allegation",
+    "Finding=finding"
+  ],
+  "returnRowStart": 31,
+  "hideRow": "allEmpty",
+  "chartType": "line",
+  "labels": {
+    "x": "",
+    "y": ""
+  },
+  "numberFormat": {
+    "fractionDigits": 2
+  }
+}

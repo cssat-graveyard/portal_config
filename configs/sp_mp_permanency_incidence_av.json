@@ -1,0 +1,34 @@
+{
+	"table": "sp_mp_permanency_incidence_av",
+	"title": "Percent of Children Achieving Permanency",
+	"subtitle": "Within One Year of Out-of-Home Placement",
+	"dropdown": "Permanency Within One Year",
+	"measurementOrder": 4,
+	"transform": {
+		"Function": "daterow",
+		"dateField": "Fiscal Year/Removal Year",
+		"valueFields": ["Percent"],
+		"removeFields": []
+	},
+	"controls": ["region"],
+	"params": ["dynamicMonthStart"],
+	"dateParams": [],
+	"requiredParams": ["dynamicMonthStart"],
+	"showAllOthers": true,
+	"returnRowHeaders": [1],
+	"returnRowDateHeaders": [],
+	"returnRowControlHeaders": [1],
+	"headerNames": ["&nbsp;",
+	"Region*region"],
+	"returnRowStart": 2,
+	"chartType": "line",
+	"labels": {
+		"x": "",
+		"y": "",
+		"yFormat": "##'%"
+	},
+	"numberFormat": {
+		"fractionDigits": 2,
+		"suffix": "%"
+	}
+}

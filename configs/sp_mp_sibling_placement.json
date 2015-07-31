@@ -1,0 +1,33 @@
+{
+	"table": "sp_mp_sibling_placement",
+	"title": "Siblings Placed Together",
+	"subtitle": "Percent of Care-Days",
+	"dropdown": "Siblings Placed Together",
+	"measurementOrder": 2,
+	"transform": {
+		"Function": "daterow",
+		"dateField": "Fiscal Year/Year Children Placed",
+		"valueFields": ["Percent"],
+		"removeFields": []
+	},
+	"controls": [],
+	"params": ["dynamicMonthStart"],
+	"dateParams": [],
+	"requiredParams": ["dynamicMonthStart"],
+	"showAllOthers": true,
+	"returnRowHeaders": [0],
+	"returnRowDateHeaders": [0],
+	"returnRowControlHeaders": [],
+	"headerNames": ["&nbsp;"],
+	"returnRowStart": 1,
+	"chartType": "line",
+	"labels": {
+		"x": "",
+		"y": "",
+		"yFormat": "##'%"
+	},
+	"numberFormat": {
+		"fractionDigits": 2,
+		"suffix": "%"
+	}
+}

@@ -1,0 +1,66 @@
+{
+	"table": "sp_mp_rate_placement_order_ts",
+	"title": "Rate of Placements by Prior Placements",
+	"subtitle": "Per 1,000 Households with Zero, One, or Two Prior Placements",
+	"dropdown": "Placements by Prior Placements",
+	"measurementOrder": 6,
+	"transform": {
+		"Function": "daterow",
+		"dateField": "Month/Year of Ordered Placement",
+		"valueFields": ["Scatterplot (Actual Values)",
+		"Trend Line (Seasonally Adjusted)"],
+		"removeFields": []
+	},
+	"controls": ["region",
+	"order"],
+	"params": [],
+	"dateParams": [],
+	"requiredParams": [],
+	"showAllOthers": true,
+	"returnRowHeaders": [0,
+	1,
+	2],
+	"returnRowDateHeaders": [0],
+	"returnRowControlHeaders": [1,
+	2],
+	"headerNames": ["&nbsp;",
+	"Region*region",
+	"Order*order"],
+	"returnRowStart": 3,
+	"hideRow": "allEmpty",
+	"columnClusterSize": 2,
+	"numberFormat": [{
+		"fractionDigits": 2
+	}],
+	"multicharts": {
+		"Trend-Line": [{
+			"chartType": "line",
+			"chartId": "chart1",
+			"labels": {
+				"x": "",
+				"y": "",
+				"yFormat": "#,##0"
+			},
+			"hideColumns": [0]
+		}],
+		"Trend-Line-with-Scatterplot": [{
+			"chartType": "combo",
+			"chartId": "chart1",
+			"labels": {
+				"x": "",
+				"y": ""
+			},
+			"hideColumns": []
+		}],
+		"Scatterplot": [{
+			"chartType": "scatterChart",
+			"chartId": "chart1",
+			"labels": {
+				"x": "",
+				"y": "",
+				"yFormat": "#,##0"
+			},
+			"hideColumns": [1]
+		}]
+	}
+}

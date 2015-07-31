@@ -1,0 +1,108 @@
+{
+  "title": "Rate of Investigations & Assessments (per 1,000)",
+  "measurementOrder": 2,
+  "table": "sp_ia_trends_rates",
+  "transform": {
+    "Function": "daterow",
+    "dateField": "Date",
+    "valueFields": [
+      "Opened Investigations & Assessments",
+      "Closed Investigations & Assessments"
+    ],
+    "removeFields": []
+  },
+  "controls": [
+    "qry_type_poc2",
+    "date_type"
+  ],
+  "params": [
+    "dynamicMonthStart",
+    "ageSib",
+    "ethnicityCensus",
+    "Ref_Serv_County",
+	"reporter_type",
+	"access_type",
+	"allegation",
+	"finding"
+  ],
+  "requiredParams": [
+	
+	"dynamicMonthStart"
+  ],
+  "hideRow": "allEmpty",
+  "returnRowHeaders": [
+    1,
+    2,
+    4,
+    6,
+	8,
+	10,
+	12,
+	14,
+	16
+  ],
+  "returnRowDateHeaders": [
+    0
+  ],
+  "returnRowControlHeaders": [
+    1,2
+  ],
+  "headerNames": [
+    "&nbsp;",
+    "*qry_type_poc2",
+    "Age Grouping=ageSib",
+    "Race/Ethnicity",
+    "County=Ref_Serv_County",
+    "Reporter Desc=reporter_type",
+    "Access type desc=access_type",
+    "Allegation=allegation",
+    "Finding=finding"
+  ],
+  "returnRowStart": 17,
+  "columnClusterSize": 3,
+  "showAllOthers": true,
+  "mutexAllOthers": false,
+  "dateParams": [],
+  "requiredParams": [
+    "dynamicMonthStart"
+  ],
+  "numberFormat": [
+    {
+      "fractionDigits": 2
+    },
+    {
+      "fractionDigits": 2
+    },
+    {
+      "fractionDigits": 2
+    }
+  ],
+  "chartType": "area",
+  "chartId": "chart1",
+  "style": "",
+  "labels": {
+    "x": "",
+    "y": ""
+  },
+  "multicharts": {
+    "Opened-and-Closed-Investigations_sAssessments": [
+      {
+        "hideColumns": []
+      }
+    ],
+    "Opened-Investigations_sAssessments": [
+      {
+        "hideColumns": [
+          1
+        ]
+      }
+    ],
+    "Closed-Investigations_sAssessments": [
+      {
+        "hideColumns": [
+          0
+        ]
+      }
+    ]
+  }
+}

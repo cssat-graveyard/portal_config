@@ -1,0 +1,34 @@
+{
+	"table": "sp_mp_rate_care_day_maltreatment_limits",
+	"title": "Rate of Substantiated Cases of Maltreatment While in Care",
+	"subtitle": "Per 100,000 Care-Days",
+	"dropdown": "Substantiated Maltreatment While in Care",
+	"measurementOrder": 7,
+	"transform": {
+		"Function": "daterow",
+		"dateField": "Fiscal Year",
+		"valueFields": ["Rate"],
+		"removeFields": []
+	},
+	"controls": ["region"],
+	"params": ["dynamicMonthStart"],
+	"dateParams": [],
+	"requiredParams": ["dynamicMonthStart"],
+	"showAllOthers": true,
+	"returnRowHeaders": [0,
+	1],
+	"returnRowDateHeaders": [0],
+	"returnRowControlHeaders": [0,
+	1],
+	"headerNames": ["&nbsp;",
+	"Region*region"],
+	"returnRowStart": 2,
+	"chartType": "line",
+	"labels": {
+		"x": "",
+		"y": ""
+	},
+	"numberFormat": {
+		"fractionDigits": 2
+	}
+}

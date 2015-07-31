@@ -1,0 +1,44 @@
+{
+  "table": "sp_mp_adult_readiness",
+  "title": "Percent of Adult-Transition Planning Meetings Held",
+  "dropdown": "Adult-Transition Planning",
+  "subtitle": "Among Youth >17.5 Years Olds",
+  "measurementOrder": 1,
+  "transform": {
+    "Function": "daterow",
+    "dateField": "Fiscal Year/Year Youth >17.5 Years Old",
+    "valueFields": [
+      "Percent"
+    ],
+    "removeFields": []
+  },
+  "controls": [
+    "region"
+  ],
+  "params": [],
+  "dateParams": [],
+  "requiredParams": [],
+  "showAllOthers": true,
+  "returnRowHeaders": [
+	1
+  ],
+  "returnRowDateHeaders": [],
+  "returnRowControlHeaders": [
+    1
+  ],
+  "headerNames": [
+    "&nbsp;",
+    "Region*region"
+  ],
+  "returnRowStart": 2,
+  "chartType": "column",
+  "labels": {
+    "x": "",
+    "y": "",
+    "yFormat": "##'%"
+  },
+  "numberFormat": {
+    "fractionDigits": 2,
+    "suffix": "%"
+  }
+}

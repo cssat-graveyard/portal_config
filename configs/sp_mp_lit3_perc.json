@@ -1,0 +1,41 @@
+{
+  "table": "sp_mp_lit3_perc",
+  "title": "Percent of Students Passing the Literacy Test",
+  "dropdown": "Third Grade Literacy",
+  "subtitle": "Among Students in the Third Grade",
+  "measurementOrder": 1,
+  "controls": [
+    "third_grade_year",
+    "disability"
+  ],
+  "params": [],
+  "dateParams": [],
+  "requiredParams": [],
+  "showAllOthers": true,
+  "returnRowHeaders": [
+    0,
+    1
+  ],
+  "returnRowDateHeaders": [],
+  "returnRowControlHeaders": [
+    0,
+    1
+  ],
+  "headerNames": [
+    "Grade Year=third_grade_year",
+    "fl_disability*disability"
+  ],
+  "hideRow": "allEmpty",
+  "columnClusterSize": 3,
+  "returnRowStart": 2,
+  "chartType": "column",
+  "labels": {
+    "x": "",
+    "y": "",
+    "yFormat": "##'%"
+  },
+  "numberFormat": {
+    "fractionDigits": 2,
+    "suffix": "%"
+  }
+}

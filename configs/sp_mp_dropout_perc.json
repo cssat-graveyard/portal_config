@@ -1,0 +1,55 @@
+{
+  "table": "sp_mp_dropout_perc",
+  "title": "Percent of Students Not Completing High School",
+  "subtitle": "By Expected High School Completion Year",
+  "dropdown": "High School Completion",
+  "measurementOrder": 2,
+  "transform": {
+    "Function": "daterow",
+    "dateField": "Grade Level",
+    "valueFields": [
+      "Percent"
+    ],
+    "removeFields": []
+  },
+  "controls": [
+    "student_type",
+    "cohort_year_graduation",
+    "disability"
+  ],
+  "params": [],
+  "dateParams": [],
+  "requiredParams": [],
+  "showAllOthers": true,
+  "returnRowHeaders": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "returnRowDateHeaders": [],
+  "returnRowControlHeaders": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "headerNames": [
+    "&nbsp;",
+    "Student Type*student_type",
+    "Cohort Period*cohort_year_graduation",
+    "fl_disability*disability"
+  ],
+  "returnRowStart": 4,
+  "hideRow": "allEmpty",
+  "chartType": "column",
+  "labels": {
+    "x": "",
+    "y": "",
+    "yFormat": "##'%"
+  },
+  "numberFormat": {
+    "fractionDigits": 2,
+    "suffix": "%"
+  }
+}
