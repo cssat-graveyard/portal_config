@@ -4,9 +4,11 @@
   "dropdown": "Percent of Children Re-Entering Out-of-Home Care",
   "transform": {
     "Function": "daterow",
-	"dateField": "Months Since Exiting Out-of-Home Care",
-    "valueFields": ["Re-Entry Percent"],
-	"removeFields": []
+    "dateField": "Months Since Exiting Out-of-Home Care",
+    "valueFields": [
+      "Re-Entry Percent"
+    ],
+    "removeFields": []
   },
   "controls": [
     "qry_type_first_unique_ooh_reentry",
@@ -23,21 +25,19 @@
     "ooh_los",
     "nbr_placement",
     "ihs_services_ooh",
-	"reporter_type",
-	"access_type",
-	"allegation",
-	"finding",
-    "ignore_service_category",
-	"ignore_budget_category",
-	"dependency_cd"
+    "reporter_type",
+    "access_type",
+    "allegation",
+    "finding",
+    "dependency_cd"
   ],
   "dateParams": [],
   "requiredParams": [],
   "showAllOthers": true,
   "returnRowHeaders": [
     0,
-	1,
-	2,
+    1,
+    2,
     4,
     6,
     8,
@@ -51,23 +51,23 @@
     24,
     26,
     28,
-    30,
-    32,
-    34,
-    36
+    30
   ],
   "returnRowDateHeaders": [],
-  "returnRowControlHeaders": [1, 2, 36],
+  "returnRowControlHeaders": [
+    1,
+    2
+  ],
   "headerNames": [
-	"&nbsp;",
+    "&nbsp;",
+    "Cohort Entry Date*cohort_year_ooh_safety",
     "qry_type_poc1_first_unique*qry_type_first_unique_ooh_reentry",
-	"Cohort Entry Date*cohort_year_ooh_safety",
     "Age Grouping=age_exit_safety",
-    "Gender=gender",
     "Race/Ethnicity",
+    "Gender=gender",
     "Initial Placement=initSetng",
     "Longest Placement=longSetng",
-    "Exit County=exitCounty",
+    "County=exitCounty",
     "Dependency=dependency_cd",
     "Length of Service Desc=ooh_los",
     "Placement Count Desc=nbr_placement",
@@ -76,21 +76,18 @@
     "Access type desc=access_type",
     "Allegation=allegation",
     "Finding=finding",
-    "Service Type=service_category",
-    "Budget=budget_category",
-	"Discharge Type=discharge_type_safety"
+    "Discharge Type=discharge_type_safety"
   ],
-  "returnRowStart": 37,
+  "returnRowStart": 33,
   "hideRow": "allEmpty",
   "chartType": "line",
   "labels": {
     "x": "Months Since Exiting Out-of-Home Care",
     "y": "",
-	"yFormat": "##'%"
+    "yFormat": "##'%"
   },
   "numberFormat": {
-    "suffix": "%",
-    "fractionDigits": 2
-  },
-	"hideRow": "allEmpty"
+    "fractionDigits": 2,
+    "suffix": "%"
+  }
 }

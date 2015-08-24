@@ -30,8 +30,6 @@
     "access_type",
     "allegation",
     "finding",
-    "ignore_service_category",
-    "ignore_budget_category",
     "dependency_cd"
   ],
   "dateParams": [],
@@ -41,7 +39,7 @@
   "showAllOthers": true,
   "returnRowHeaders": [
     0,
-	1,
+    1,
     4,
     6,
     8,
@@ -55,16 +53,13 @@
     24,
     26,
     28,
-    30,
-    32,
-    34,
-	35
+    30
   ],
   "returnRowDateHeaders": [
     0
   ],
   "returnRowControlHeaders": [
-    1,35
+    1
   ],
   "headerNames": [
     "&nbsp;",
@@ -83,20 +78,16 @@
     "Access type desc=access_type",
     "Allegation=allegation",
     "Finding=finding",
-    "Service Type=service_category",
-    "Budget=budget_category",
-	"cd_discharge_type*discharge_type_exits"
+    "cd_discharge_type*discharge_type_exits"
   ],
-  "returnRowStart": 37,
+  "returnRowStart": 33,
+  "hideRow": "allEmpty",
   "chartType": "line",
   "labels": {
     "x": "",
     "y": ""
   },
-  "numberFormat": [
-    {
-      "fractionDigits": 0
-    }
-  ],
-	"hideRow": "allEmpty"
+  "numberFormat": {
+    "fractionDigits": 0
+  }
 }
