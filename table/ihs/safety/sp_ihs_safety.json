@@ -1,0 +1,77 @@
+{
+  "table": "sp_ihs_safety",
+  "title": "Placement Following Placement Prevention Services",
+  "transform": {
+    "Function": "daterow",
+    "dateField": "Months Since Placement Prevention Service Case Opened",
+    "valueFields": [
+      "Percent Placed"
+	],
+    "removeFields": []
+  },
+  "controls": [
+    "qry_type",
+	"cohort_year_ihs_safety"
+  ],
+  "params": [
+    "ageSib",
+    "ethnicityCensus",
+    "ServiceCnty",
+    "ihs_services",
+    "reporter_type",
+    "access_type",
+    "allegation",
+    "finding",
+    "pp_service_category",
+    "budget_category_pps"
+  ],
+  "dateParams": [],
+  "requiredParams": [],
+  "showAllOthers": true,
+  "returnRowHeaders": [
+    0,
+    1,
+    3,
+    5,
+    7,
+    9,
+    11,
+    13,
+    15,
+    17,
+    19,
+    21,
+    23
+  ],
+  "returnRowDateHeaders": [],
+  "returnRowControlHeaders": [
+    1
+  ],
+  "headerNames": [
+	"&nbsp;",
+	"qry_type*qry_type_first_unique",
+	"Cohort Period*cohort_year_ihs_safety",
+	"Age Grouping=ageSib",
+	"Race/Ethnicity",
+	"County=ServiceCnty",
+	"In-Home Service Desc=ihs_services",
+	"Reporter Desc=reporter_type",
+	"Access type desc=access_type",
+	"Allegation=allegation",
+	"Finding=finding",
+	"Service Type=pp_service_category",
+	"Budget=budget_category_pps"
+  ],
+  "returnRowStart": 24,
+  "hideRow": "allEmpty",
+  "chartType": "line",
+  "labels": {
+    "x": "Months Since Placement Prevention Service Case Opened",
+    "y": "",
+	"yFormat": "##'%"
+  },
+  "numberFormat": {
+    "suffix": "%",
+    "fractionDigits": 2
+  }
+}

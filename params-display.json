@@ -345,6 +345,20 @@
       "help": "Cohort data for children who enter out-of-home care are aggregated into ‘first’ and ‘unique’ entries into out-of-home care. See <A href='/publications/interpreting_type_of_count_filter' target=_blank>Interpreting Type of Count</A>."
     }
   },
+    "qry_type": {
+    "table": "ref_lookup_qry_type",
+    "display": {
+      "legend": "Count Type",
+      "column": "fieldsRight",
+      "type": "filter",
+      "multi": true,
+      "zeroLast": false,
+      "sort": "qryTypeCompare",
+      "selected": 0,
+      "visible": true,
+      "help": "Cohort data for household with children who are placed in out-of-home care after receiving placement prevention services are aggregated into ‘first’ and ‘all’ placement prevention cases. See <A href='/publications/interpreting_type_of_count_filter' target=_blank>Interpreting Type of Count</A>."
+    }
+  },  
   "qry_type_first_unique_ia_safety": {
     "values": {
       "0": "All Investigations/Assessments",

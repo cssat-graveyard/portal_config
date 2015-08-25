@@ -1,0 +1,192 @@
+{
+  "title": "Rate of Placement Prevention Service Cases per 1,000",
+  "measurementOrder": 2,
+  "table": "sp_ihs_trends_rates",
+  "transform": {
+    "Function": "daterow",
+    "dateField": "Date",
+    "valueFields": [
+      "Total PPS Cases 1st Day",
+      "Opened Cases",
+      "Closed Cases"
+    ],
+    "removeFields": []
+  },
+  "controls": [
+    "qry_type_poc3",
+    "date_type"
+  ],
+  "params": [
+    "dynamicMonthStart",
+    "ageSib",
+    "ethnicityCensus",
+    "ServiceCnty",
+    "ihs_services",
+    "reporter_type",
+    "access_type",
+    "allegation",
+    "finding",
+    "pp_service_category",
+    "budget_category_pps"
+  ],
+  "dateParams": [],
+  "requiredParams": [
+    "dynamicMonthStart"
+  ],
+  "returnRowHeaders": [
+    0,
+    1,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14,
+    16,
+    18,
+    20,
+    22
+  ],
+  "returnRowDateHeaders": [
+    0
+  ],
+  "returnRowControlHeaders": [
+    1,2
+  ],
+  "headerNames": [
+    "&nbsp;",
+    "*qry_type_poc3",
+    "Age Grouping=ageSib",
+    "Race/Ethnicity",
+    "County=ServiceCnty",
+	"In-Home Service Desc=ihs_services",
+    "Reporter Desc=reporter_type",
+    "Access type desc=access_type",
+    "Allegation=allegation",
+    "Finding=finding",
+    "Service Type=pp_service_category",
+    "Budget=budget_category_pps"
+  ],
+  "returnRowStart": 23,
+  "columnClusterSize": 3,
+  "showAllOthers": true,
+  "mutexAllOthers": false,
+  "multicharts": {
+    "Overview": [
+      {
+        "chartType": "column",
+        "chartId": "chart1",
+        "style": "",
+        "baseOptions": {
+          "width": 615,
+          "height": 215,
+          "chartArea": {
+            "left": 75,
+            "top": 10,
+            "width": "85%",
+            "height": "90%"
+          }
+        },
+        "labels": {
+          "x": "",
+          "y": ""
+        },
+        "hideColumns": [
+          1,
+          2
+        ]
+      },
+      {
+        "chartType": "area",
+        "chartId": "chart2",
+        "style": "",
+        "baseOptions": {
+          "width": 615,
+          "height": 215,
+          "chartArea": {
+            "left": 75,
+            "top": 10,
+            "width": "85%",
+            "height": "75%"
+          }
+        },
+        "labels": {
+          "x": "",
+          "y": ""
+        },
+        "hideColumns": [
+          0
+        ]
+      }
+    ],
+    "All-Placement-Prevention-Service-Cases-_p1st-Day-Qrtr_sYr_P": [
+      {
+        "chartType": "column",
+        "chartId": "chart1",
+        "style": "",
+        "labels": {
+          "x": "",
+          "y": ""
+        },
+        "hideColumns": [
+          1,
+          2
+        ],
+        "addInputClass": "multiAllowed"
+      }
+    ],
+    "Opened-and-Closed-Placement-Prevention-Service-Cases": [
+      {
+        "chartType": "area",
+        "chartId": "chart1",
+        "style": "",
+        "labels": {
+          "x": "",
+          "y": ""
+        },
+        "hideColumns": [
+          0
+        ]
+      }
+    ],
+    "Opened-Placement-Prevention-Service-Cases": [
+      {
+        "chartType": "area",
+        "chartId": "chart1",
+        "style": "",
+        "labels": {
+          "x": "",
+          "y": ""
+        },
+        "hideColumns": [
+          0,
+          2
+        ],
+        "addInputClass": "multiAllowed"
+      }
+    ],
+    "Closed-Placement-Prevention-Service-Cases": [
+      {
+        "chartType": "area",
+        "chartId": "chart1",
+        "style": "",
+        "labels": {
+          "x": "",
+          "y": ""
+        },
+        "hideColumns": [
+          0,
+          1
+        ],
+        "addInputClass": "multiAllowed"
+      }
+    ]
+  },
+  "numberFormat": {
+    "fractionDigits": 2
+  },
+  "labels": {
+    "x": "",
+    "y": ""
+  }
+}
