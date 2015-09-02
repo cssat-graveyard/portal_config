@@ -614,6 +614,7 @@
       "multi": true,
       "selected": "2010",
       "alias": "Cohort Period",
+	  "resultUnavailable": "disable",
       "help": "The entry cohort is that group of children who entered out-of-home care in the selected year(s). ‘Entry Cohort Year’ choices begin January 2000 and end on the most recent year for which we have data. The default date is set four years earlier than the most recent year and returns result for 48 months. If a year that was less than 48 ago is selected, the line graph and the data will be truncated."
     }
   },
