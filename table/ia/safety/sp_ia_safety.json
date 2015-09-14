@@ -3,9 +3,9 @@
   "title": "Re-Referrals",
   "transform": {
     "Function": "daterow",
-    "dateField": "Months Since 1st Investigation/Assessment",
+    "dateField": "Months Since Screend-In Investigation/Assessment",
     "valueFields": [
-      "Among first referrals, percent that are re-referred"
+      "Percent"
     ],
     "removeFields": [],
 	"table": "sp_ia_safety"
