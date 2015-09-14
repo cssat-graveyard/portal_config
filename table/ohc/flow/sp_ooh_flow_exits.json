@@ -17,7 +17,7 @@
   ],
   "params": [
     "dynamicMonthStart",
-    "ageExits",
+    "pitAgeCensus",
     "ethnicityCensus",
     "gender",
     "initSetng",
